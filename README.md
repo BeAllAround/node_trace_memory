@@ -29,6 +29,12 @@ trace_memory( () => {
   time: 16
 }
 
+// to get this object instead of using verbose for console.log
+trace_memory( () => {
+  make_array(1000000)
+}, { unit: 'MB' })
+  .then(memoryUsage => console.log(memoryUsage))
+// trace_memory returns a Promise so you can use await as well :)
 
 ```
 
