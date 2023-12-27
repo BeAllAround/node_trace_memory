@@ -1,7 +1,7 @@
 {
   "name": "simple_memory_trace",
   "version": "0.0.1",
-  "description": "\"Simplified way to trace memory of your NodeJS functions\"",
+  "description": "\"Simple way to trace memory of your NodeJS functions\"",
   "main": "lib/js/trace_memory.js",
   "scripts": {
     "repo-tag": "REPO_VERSION=`node -e \"console.log(require('./package').version)\"` && echo TAG: v$REPO_VERSION && git commit -a -m v$REPO_VERSION && git push && git tag v$REPO_VERSION && git push --tags;"
