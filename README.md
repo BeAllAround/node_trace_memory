@@ -1,6 +1,7 @@
 # simple-memory-trace
 
 simple-memory-trace gives you a simple way to easily trace the used memory of a JS function. 
+
 It uses `process.memoryUsage` to get the metadata.
 
 It is as simple as Python tracemalloc!
