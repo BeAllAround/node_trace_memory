@@ -1,7 +1,7 @@
 {
   "name": "simple-memory-trace",
-  "version": "0.0.2",
-  "description": "\"Simple way to trace memory of your NodeJS functions\"",
+  "version": "0.0.3",
+  "description": "Simple way to trace memory of your NodeJS functions",
   "main": "lib/js/trace_memory.js",
   "scripts": {
     "repo-npm-publish": "npm run repo-tag && npm publish",
