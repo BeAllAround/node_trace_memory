@@ -19,6 +19,17 @@ trace_memory( () => {
   make_array(1000000)
 }, { verbose: true, unit: 'MB' })
 
+// This will print out something like:
+{
+  rss: '33.593 MB',
+  heapTotal: '44.382 MB',
+  heapUsed: '28.986 MB',
+  external: '0 MB',
+  arrayBuffers: '0 MB',
+  time: 16
+}
+
+
 ```
 
 ## trace_memory(func: Function, options: Object, ...args: any[])
