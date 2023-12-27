@@ -32,7 +32,7 @@ trace_memory( () => {
 
 ```
 
-## trace_memory(func: Function, options: Object, ...args: any[])
+## trace_memory(func: Function | AsyncFunction, options: Object, ...args: any[]) -> Promise<any>
 
   <h2>options</h2>
   <pre>
