@@ -1,8 +1,8 @@
-# simple_memory_trace
+# simple-memory-trace
 
-simple_memory_trace gives you a simple way to easily trace the used memory of a JS function.
+simple-memory-trace gives you a simple way to easily trace the used memory of a JS function.
 
-It is as simple as Python trace_malloc!
+It is as simple as Python tracemalloc!
 
 ```js
 

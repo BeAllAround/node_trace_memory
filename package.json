@@ -1,5 +1,5 @@
 {
-  "name": "simple_memory_trace",
+  "name": "simple-memory-trace",
   "version": "0.0.1",
   "description": "\"Simple way to trace memory of your NodeJS functions\"",
   "main": "lib/js/trace_memory.js",
@@ -13,11 +13,12 @@
   "author": "Aleksandar Milenkovic",
   "repository": {
     "type": "git",
-    "url": "git@github.com:BeAllAround/simple_memory_trace.git"
+    "url": "git@github.com:BeAllAround/simple-memory-trace.git"
   },
   "license": "MIT",
   "files": [
     "lib",
+    "test",
     "LICENSE",
     "README.md"
   ]
