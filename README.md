@@ -21,5 +21,19 @@ trace_memory( () => {
 
 ```
 
+## trace_memory(func: Function, options: Object, ...args: any[])
+
+  <h2>options</h2>
+  <pre>
+{
+  verbose: true | false, # default: false
+  unit: "B" | "KB" | "MB" | "GB" | "TB", # default: "B"
+  fix_decimal: &lt;INTEGER&gt;,     
+}</pre>
+  <p>Where:<br>
+    <i>&lt;INTEGER&gt;</i>: the maximum floor of the traced memory <br>
+  </p>
+
+
 **Installation:**
         npm: `> npm install simple-memory-trace`
