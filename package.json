@@ -4,6 +4,7 @@
   "description": "\"Simple way to trace memory of your NodeJS functions\"",
   "main": "lib/js/trace_memory.js",
   "scripts": {
+    "repo-npm-publsh": "npm run repo-tag && npm publish",
     "repo-tag": "REPO_VERSION=`node -e \"console.log(require('./package').version)\"` && echo TAG: v$REPO_VERSION && git commit -a -m v$REPO_VERSION && git push && git tag v$REPO_VERSION && git push --tags;"
   },
   "keywords": [
