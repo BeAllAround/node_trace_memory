@@ -28,7 +28,7 @@ trace_memory( () => {
 {
   verbose: true | false, # default: false
   unit: "B" | "KB" | "MB" | "GB" | "TB", # default: "B"
-  fix_decimal: &lt;INTEGER&gt;,     
+  fix_decimal: &lt;INTEGER&gt; # default: 3
 }</pre>
   <p>Where:<br>
     <i>&lt;INTEGER&gt;</i>: the maximum floor of the traced memory <br>
