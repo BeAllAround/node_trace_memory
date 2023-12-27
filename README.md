@@ -26,7 +26,7 @@ trace_memory( () => {
   heapUsed: '28.986 MB',
   external: '0 MB',
   arrayBuffers: '0 MB',
-  time: 16
+  time: 16 // measured time to run make_array
 }
 
 // to get this object instead of using verbose for console.log
