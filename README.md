@@ -6,7 +6,7 @@ It is as simple as Python trace_malloc!
 
 ```js
 
-const trace_memory = require('../lib/js/trace_memory')
+const trace_memory = require("simple-memory-trace")
 
 function make_array(size) {
   let arr = []
