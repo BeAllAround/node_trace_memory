@@ -54,5 +54,8 @@ trace_memory( () => {
   </p>
 
 
-**Installation:**
-        npm: `> npm install simple-memory-trace`
+## Installation
+
+```sh
+npm install simple-memory-trace --save-dev
+```
