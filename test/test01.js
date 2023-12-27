@@ -11,6 +11,7 @@ function trace_make_array() {
   trace_memory( () => {
     make_array(1000000)
   }, { verbose: true, unit: 'MB' })
+    .then(console.log)
 }
 
 (function main(argc, argv) {
