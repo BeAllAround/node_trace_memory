@@ -1,0 +1,24 @@
+{
+  "name": "node_trace_memory",
+  "version": "0.0.1",
+  "description": "\"Simplified way to trace memory of your NodeJS functions\"",
+  "main": "lib/trace_memory.js",
+  "scripts": {
+    "repo-tag": "REPO_VERSION=`node -e \"console.log(require('./package').version)\"` && echo TAG: v$REPO_VERSION && git commit -a -m v$REPO_VERSION && git push && git tag v$REPO_VERSION && git push --tags;"
+  },
+  "keywords": [
+    "tracer",
+    "memory"
+  ],
+  "author": "Aleksandar Milenkovic",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:BeAllAround/node_trace_memory.git"
+  },
+  "license": "MIT",
+  "files": [
+    "lib",
+    "LICENSE",
+    "README.md"
+  ]
+}
