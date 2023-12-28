@@ -51,6 +51,9 @@ let memoryUsage1 = await trace_memory( () => {
 }, { unit: 'MB' })
 // use memoryUsage1
 
+// to look at the memory actually used by your function
+// look at either heapTotal, headUsed
+
 
 
 ```
