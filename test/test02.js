@@ -26,7 +26,7 @@ function make_array(size) {
   console.log(memoryUsage1)
 
   memoryUsage = await trace_memory( () => {
-    make_array(1000000)
+    make_array(5000000)
   }, { unit: 'MB' })
   console.log(memoryUsage)
 
