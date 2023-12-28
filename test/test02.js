@@ -11,15 +11,17 @@ function make_array(size) {
 
 (async function main(argc, argv)  {
   await trace_memory( () => {
-    make_array(1000000)
-  }, { verbose: true, unit: 'MB' })
+    make_array(100)
+  }, { verbose: true, unit: 'B' })
 
-  // to get this object instead of using verbose for console.log
+  /*
   let memoryUsage = await trace_memory( () => {
     make_array(10000000)
   }, { unit: 'MB' })
   console.log(memoryUsage)
+  */
 
+  // to get this object instead of using verbose for console.log
   let memoryUsage1 = await trace_memory( () => {
     make_array(1000000)
   }, { unit: 'MB' })
