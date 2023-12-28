@@ -1,3 +1,5 @@
+[![npm version](https://img.shields.io/npm/v/simple-memory-trace.svg)](https://npmjs.com/package/simple-memory-trace)
+
 # simple-memory-trace
 
 simple-memory-trace gives you a simple way to easily trace the used memory of a JS function. 
