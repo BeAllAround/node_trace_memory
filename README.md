@@ -25,7 +25,7 @@ trace_memory( () => {
 {
   rss: '33.593 MB',
   heapTotal: '44.382 MB',
-  heapUsed: '28.986 MB',
+  heapUsed: '28.986 MB', // memory actually used by your JS function
   external: '0 MB',
   arrayBuffers: '0 MB',
   time: 16 // measured time to run make_array
