@@ -14,7 +14,7 @@ function trace_make_array() {
     .then(console.log)
 }
 
-(function main(argc, argv) {
+(async function main(argc, argv) {
   let args = []
   trace_make_array(...args)
 

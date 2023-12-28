@@ -38,6 +38,21 @@ trace_memory( () => {
   .then(memoryUsage => console.log(memoryUsage))
 // trace_memory returns a Promise so you can use await as well :)
 
+// to trace memory of a function one after another, it is important to use await to avoid weird behavior
+// for example
+
+let memoryUsage = await trace_memory( () => {
+  make_array(1000000)
+}, { unit: 'MB' })
+// use memoryUsage
+
+let memoryUsage1 = await trace_memory( () => {
+  make_array(1000000)
+}, { unit: 'MB' })
+// use memoryUsage1
+
+
+
 ```
 
 ## trace_memory(func: Function | AsyncFunction, options: Object, ...args: any[]) -> Promise<any>
