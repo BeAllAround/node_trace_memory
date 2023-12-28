@@ -10,6 +10,8 @@ It is as simple as Python tracemalloc!
 
 NOTE: NEEDS TO RUN WITH `--expose-gc`: `node --expose-gc <file>.js`
 
+However, you may turn it off from `options` with `force_gc: 0`.
+
 ```js
 
 const trace_memory = require("simple-memory-trace")
@@ -67,9 +69,10 @@ let memoryUsage1 = await trace_memory( () => {
   <h2>options</h2>
   <pre>
 {
-  verbose: true | false, # default: false
-  unit: "B" | "KB" | "MB" | "GB" | "TB", # default: "B"
-  fix_decimal: &lt;INTEGER&gt; # default: 3
+  verbose: true | false, // default: false
+  unit: "B" | "KB" | "MB" | "GB" | "TB", // default: "B"
+  fix_decimal: &lt;INTEGER&gt; // default: 3,
+  force_gc: 0 | 1 // default: 1
 }</pre>
   <p>Where:<br>
     <i>&lt;INTEGER&gt;</i>: the maximum floor of the traced memory <br>
