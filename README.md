@@ -6,7 +6,7 @@ It uses `process.memoryUsage` to get the metadata.
 
 It is as simple as Python tracemalloc!
 
-NOTE: NEEDS TO RUN WITH: `node --expose-gc <file>.js`
+NOTE: NEEDS TO RUN WITH `--expose-gc`: `node --expose-gc <file>.js`
 
 ```js
 
