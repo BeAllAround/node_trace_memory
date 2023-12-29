@@ -9,6 +9,7 @@ It uses `process.memoryUsage` to get the metadata.
 It is as simple as Python tracemalloc!
 
 NOTE: NEEDS TO RUN WITH `--expose-gc`: `node --expose-gc <file>.js`
+      for browser environments: `chrome | brave: --enable-precise-memory-info`
 
 However, you may turn it off from `options` with `force_gc: 0`.
 
