@@ -84,5 +84,6 @@ let memoryUsage1 = await trace_memory( () => {
 ## Installation
 
 ```sh
-npm install simple-memory-trace --save-dev
+npm install simple-memory-trace --save-dev # NodeJS
+npm install simple-memory-trace-browser --save-dev # Browser
 ```
