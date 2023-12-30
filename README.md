@@ -6,7 +6,7 @@ simple-trace-malloc gives you a simple way to easily trace the allocated memory 
 
 It uses `process.memoryUsage` to get the metadata.
 
-It is as simple as Python tracemalloc!
+It is as simple as Python `tracemalloc`!
 
 NOTE: NEEDS TO RUN WITH `--expose-gc`: `node --expose-gc <file>.js`
 
