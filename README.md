@@ -1,8 +1,8 @@
-[![npm version](https://img.shields.io/npm/v/simple-memory-trace.svg)](https://npmjs.com/package/simple-memory-trace)
+[![npm version](https://img.shields.io/npm/v/simple-trace-malloc.svg)](https://npmjs.com/package/simple-trace-malloc)
 
-# simple-memory-trace
+# simple-trace-malloc
 
-simple-memory-trace gives you a simple way to easily trace the used memory of a JS function. 
+simple-trace-malloc gives you a simple way to easily trace the allocated memory of a JS function. 
 
 It uses `process.memoryUsage` to get the metadata.
 
@@ -16,7 +16,7 @@ However, you may turn it off from `options` with `force_gc: 0`.
 
 ```js
 
-const trace_memory = require("simple-memory-trace")
+const trace_malloc = require("simple-trace-malloc")
 
 function make_array(size) {
   let arr = []
@@ -25,7 +25,7 @@ function make_array(size) {
   return arr
 } 
 
-trace_memory( () => {
+trace_malloc( () => {
   make_array(1000000)
 }, { verbose: true, unit: 'MB' })
 
@@ -40,7 +40,7 @@ trace_memory( () => {
 }
 
 // to get this object instead of using verbose for console.log
-trace_memory( () => {
+trace_malloc( () => {
   make_array(1000000)
 }, { unit: 'MB' })
   .then(memoryUsage => console.log(memoryUsage))
@@ -49,12 +49,12 @@ trace_memory( () => {
 // to trace memory of a function one after another, it is important to use await to avoid weird behavior
 // for example
 
-let memoryUsage = await trace_memory( () => {
+let memoryUsage = await trace_malloc( () => {
   make_array(1000000)
 }, { unit: 'MB' })
 // use memoryUsage
 
-let memoryUsage1 = await trace_memory( () => {
+let memoryUsage1 = await trace_malloc( () => {
   make_array(1000000)
 }, { unit: 'MB' })
 // use memoryUsage1
@@ -66,7 +66,7 @@ let memoryUsage1 = await trace_memory( () => {
 
 ```
 
-## trace_memory(func: Function | AsyncFunction, options: Object, ...args: any[]) -> Promise<any>
+## trace_malloc(func: Function | AsyncFunction, options: Object, ...args: any[]) -> Promise<any>
 
   <h2>options</h2>
   <pre>
@@ -84,6 +84,6 @@ let memoryUsage1 = await trace_memory( () => {
 ## Installation
 
 ```sh
-npm install simple-memory-trace --save-dev # NodeJS
-npm install simple-memory-trace-browser --save-dev # Browser
+npm install simple-trace-malloc --save-dev # NodeJS
+npm install simple-trace-malloc-browser --save-dev # Browser
 ```

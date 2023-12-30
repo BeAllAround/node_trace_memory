@@ -1,4 +1,4 @@
-const trace_memory = require('../lib/js/trace_memory')
+const trace_malloc = require('../lib/js/trace_malloc')
 
 function make_array(size) {
   let arr = []
@@ -8,7 +8,7 @@ function make_array(size) {
 }
 
 function trace_make_array() {
-  trace_memory( () => {
+  trace_malloc( () => {
     make_array(1000000)
   }, { verbose: true, unit: 'MB' })
     .then(console.log)

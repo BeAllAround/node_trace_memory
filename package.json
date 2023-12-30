@@ -1,8 +1,8 @@
 {
-  "name": "simple-memory-trace",
+  "name": "simple-trace-malloc",
   "version": "0.1.1",
-  "description": "Simple way to trace memory of your NodeJS functions",
-  "main": "lib/js/trace_memory.js",
+  "description": "Simple way to trace allocated memory of your NodeJS functions",
+  "main": "lib/js/trace_malloc.js",
   "scripts": {
     "repo-npm-publish": "npm run repo-tag && npm publish",
     "test": "node --expose-gc ./test/test02.js",
@@ -10,12 +10,13 @@
   },
   "keywords": [
     "tracer",
-    "memory"
+    "memory",
+    "malloc"
   ],
   "author": "Aleksandar Milenkovic",
   "repository": {
     "type": "git",
-    "url": "git@github.com:BeAllAround/simple-memory-trace.git"
+    "url": "git@github.com:BeAllAround/simple-trace-malloc.git"
   },
   "license": "MIT",
   "files": [
