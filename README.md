@@ -44,9 +44,9 @@ trace_malloc( () => {
   make_array(1000000)
 }, { unit: 'MB' })
   .then(memoryUsage => console.log(memoryUsage))
-// trace_memory returns a Promise so you can use await as well :)
+// trace_malloc returns a Promise so you can use await as well :)
 
-// to trace memory of a function one after another, it is important to use await to avoid weird behavior
+// to trace allocated memory of a function one after another, it is important to use await to avoid weird behavior
 // for example
 
 let memoryUsage = await trace_malloc( () => {
@@ -77,7 +77,7 @@ let memoryUsage1 = await trace_malloc( () => {
   force_gc: 0 | 1 // default: 1
 }</pre>
   <p>Where:<br>
-    <i>&lt;INTEGER&gt;</i>: the maximum floor of the traced memory <br>
+    <i>&lt;INTEGER&gt;</i>: the maximum floor of the allocated memory <br>
   </p>
 
 
